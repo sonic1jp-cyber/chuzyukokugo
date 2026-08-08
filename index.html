@@ -418,14 +418,14 @@
   /* ===== Two-up: Fincs / note ===== */
   .two-up {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
   }
   .scale-card {
     background: #fff;
     border: 1px solid var(--line);
     border-radius: 14px;
-    padding: 40px 36px;
+    padding: 36px 28px;
     display: flex;
     flex-direction: column;
     transition: transform .2s, box-shadow .2s, border-color .2s;
@@ -448,6 +448,7 @@
     border-radius: 999px;
     font-weight: 600;
   }
+  .scale-card .badge-new { background: #c8442e; }
   .scale-card h3 {
     font-family: var(--serif);
     font-size: 22px;
@@ -505,8 +506,10 @@
     border-color: var(--navy-2);
     gap: 12px;
   }
-  @media (max-width: 760px) {
+  @media (max-width: 1024px) {
     .two-up { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 760px) {
     .scale-card { padding: 32px 24px; }
   }
 
@@ -1002,7 +1005,7 @@
       <div class="section-eyebrow">SELF-LEARNING</div>
       <h2 class="section-title">動画で学ぶ、マニュアルで導く</h2>
       <p class="section-desc">
-        家庭教師の枠に空きがなくても大丈夫。お子さん本人が動画で学ぶか、保護者の方が完全マニュアルで導くか。
+        家庭教師の枠に空きがなくても大丈夫。動画で学ぶ・マニュアルで導く・授業を紙上で追体験する、ご家庭に合った形を選べます。
       </p>
     </div>
 
@@ -1035,6 +1038,21 @@
           家庭教師をつけずに、ご家庭で進めたい方へ。
         </p>
         <span class="card-link">マニュアルを見る <span class="arrow">→</span></span>
+      </a>
+
+      <a href="https://note.com/sonic1jp/n/nae39c3661517" target="_blank" rel="noopener" class="scale-card reveal">
+        <span class="badge badge-new">NEW</span>
+        <div class="role-row">
+          <span class="role">PARENT'S PRACTICAL EDITION</span>
+          <span class="price-tag"><span class="yen">¥</span>1,800</span>
+        </div>
+        <h3>「授業の現場」全公開</h3>
+        <p>
+          20回分・約50万字の授業記録から、プロの授業をそのまま紙上で再現。
+          マニュアルの「理論」が実際の授業でどう形になるのかを見られる実技編。
+          完全マニュアルとあわせて読みたい新作です。
+        </p>
+        <span class="card-link">授業の現場を見る <span class="arrow">→</span></span>
       </a>
     </div>
   </div>
